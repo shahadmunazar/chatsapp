@@ -1,0 +1,71 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Environment files
+.env
+.env.backup
+.env.example
+
+# Node modules and build artifacts
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Vendor (will be installed via composer)
+vendor/
+
+# Storage
+storage/logs/*
+storage/framework/cache/*
+storage/framework/sessions/*
+storage/framework/views/*
+!storage/logs/.gitignore
+!storage/framework/.gitignore
+!storage/framework/cache/.gitignore
+!storage/framework/sessions/.gitignore
+!storage/framework/views/.gitignore
+
+# Cache
+bootstrap/cache/*
+!bootstrap/cache/.gitignore
+
+# Tests
+tests/
+phpunit.xml
+.phpunit.result.cache
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.cursor/
+
+# Documentation (keep essential docs)
+BROADCASTING_*.md
+CHAT_*.md
+ENV_*.md
+FRIEND_*.md
+PUSHER_*.md
+QUEUED_*.md
+UPDATE_*.md
+WALL_*.md
+
+# Keep these docs
+!README.md
+!DOCKER_SETUP.md
+!DOCKER_QUICK_START.md
+
+# Docker files (keep these for reference)
+# Dockerfile is needed for build
+# docker-compose.yml is for orchestration
+# .dockerignore is for excluding files
+
+# Misc
+.DS_Store
+Thumbs.db
+*.log
+.env.testing
+
